@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8"/>
+  
+  </head>
+  
+
+<body>
+     <div>Test</div>
+     <img id="image-1234">
+	 <img id="image-1235">
+
+	
+    
+</body>
+
+    <script>
+	var img = document.querySelector('#image-1234');
+	var img2 = document.querySelector('#image-1235');
+
+
+    
+    
+	
+	
+var count = 0;
+img.onload = function loaded() {
+count++;
+   console.info("function1 fire"+count+"times");
+   alert( "function1" );
+
+  
+};
+
+var count2 = 0;
+img2.onload = function loaded2() {
+count2++;
+   console.info("function2 fire"+count+"times");
+    alert( "function2" );
+
+  
+};
+
+window.addEventListener('load', function() {
+console.info("loaded");
+  img.src = "http://flat-icon-design.com/f/f_object_174/s256_f_object_174_0bg.png";
+})
+
+
+img.src = "http://flat-icon-design.com/f/f_object_174/s256_f_object_174_0bg.png";
+img2.src = "http://flat-icon-design.com/f/f_object_170/s256_f_object_170_0bg.png";
+
+//setTimeout('change()', 3000);
+
+//img.src = "http://flat-icon-design.com/f/f_object_170/s256_f_object_170_0bg.png";
+
+change = function (){
+
+img.src = "http://flat-icon-design.com/f/f_object_170/s256_f_object_170_0bg.png";
+}
+
+
+
+	</script>
+</html>    
